@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: dodgerblue;
+}
+
+.asos {
+    width: 1200px;
+    height: 500px;
+    border: 2px solid dodgerblue;
+    overflow: hidden;
+}
+
+.box {
+    width: 50px;
+    height: 500px;
+    border: 2px solid dodgerblue;
+    background-color: red;
+    margin: auto;
+    margin-top: 200px;
+    margin-left: 450px;
+    animation: army  2s infinite linear;
+    animation-delay: 1s;
+}
+
+.box:nth-child(2) {
+    border: 2px solid dodgerblue;
+    background-color: orangered;
+    margin: auto;
+    margin-top: -500px;
+    margin-left: 550px;
+    animation-delay: 1.5s;
+}
+
+.box:nth-child(3) {
+    border: 2px solid dodgerblue;
+    background-color: orange;
+    margin: auto;
+    margin-top: -500px;
+    margin-left: 650px;
+    animation-delay: 2.5s;
+}
+
+.box:nth-child(4) {
+    border: 2px solid dodgerblue;
+    background-color: greenyellow;
+    margin: auto;
+    margin-top: -500px;
+    margin-left: 750px;
+    animation-delay: 2s;
+}
+
+
+
+@keyframes army {
+    0% {
+        transform: translateY(0);
+
+    }
+
+    25% {
+        transform: translateY(200px);
+    }
+
+    50% {
+        transform: translateY(250px);
+    }
+
+    75% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.asos2 {
+    width: 500px;
+    height: 500px;
+    border: 2px solid dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: army2 1s infinite linear;
+    animation-delay: 3s;
+    /* transition: 5s; */
+}
+
+.box2 {
+    width: 300px;
+    height: 300px;
+    border: 35px solid pink;
+    border-radius: 50%;
+    border-right-color: dodgerblue;
+    border-left-color: dodgerblue;
+}
+
+.o {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 18px solid pink;
+    border-radius: 50%;
+    left: 137.5px;
+    top: 135px;
+}
+
+.o2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 18px solid pink;
+    border-radius: 50%;
+    left: 326px;
+    top: 139px;
+}
+
+.o3 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 18px solid pink;
+    border-radius: 50%;
+    left: 137px;
+    top: 324px;
+}
+
+.o4 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 18px solid pink;
+    border-radius: 50%;
+    left: 326px;
+    top: 321px;
+}
+
+@keyframes army2 {
+    /* 0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(450deg);
+    }
+
+    50% {
+        transform: rotate(500deg);
+    }
+
+    75% {
+        transform: rotate(550pdeg);
+    }
+
+    100% {
+        transform: rotate(0);
+    } */
+
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+
+}
